@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jmvo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0076-tenant/cin4s-839-0076-app/devfile-sample-jmvo@sha256:714083da548dc1194ac112b4b6276d311ee3eed230481d3b636a7801bc749d28
+        name: my-nodejs
+        resources: {}
+status: {}
